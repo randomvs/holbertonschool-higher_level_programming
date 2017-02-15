@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def best_score(my_dict):
 
-    if my_dict is None:
+    if my_dict is None or len(list(my_dict.keys())) is 0:
         return None
 
     start = 0
