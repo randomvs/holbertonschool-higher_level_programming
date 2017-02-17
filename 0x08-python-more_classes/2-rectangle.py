@@ -23,7 +23,6 @@ class Rectangle:
     def area(self):
         return self.__width * self.__height
 
-
     @property
     def width(self):
         return self.__width
