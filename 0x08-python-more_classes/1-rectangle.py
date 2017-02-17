@@ -7,13 +7,13 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         if isinstance(width, int) is False:
-            raise TypeError(widthType)
+            raise TypeError(self.widthType)
         if width < 0:
-            raise ValueError(widthValue)
+            raise ValueError(self.widthValue)
         if isinstance(height, int) is False:
-            raise TypeError(heightType)
+            raise TypeError(self.heightType)
         if height < 0:
-            raise ValueError(heightValue)
+            raise ValueError(self.heightValue)
         self.__height = height
         self.__width = width
 
@@ -24,9 +24,9 @@ class Rectangle:
     @width.setter
     def width(self, value):
         if isinstance(value, int) is False:
-            raise TypeError(widthType)
+            raise TypeError(self.widthType)
         if value < 0:
-            raise ValueError(widthValue)
+            raise ValueError(self.widthValue)
         self.__width = value
 
     @property
@@ -36,7 +36,7 @@ class Rectangle:
     @height.setter
     def height(self, value):
         if isinstance(value, int) is False:
-            raise TypeError(heightType)
+            raise TypeError(self.heightType)
         if value < 0:
-            raise ValueError(heightValue)
+            raise ValueError(self.heightValue)
         self.__height = value
